@@ -1,0 +1,13 @@
+@import "variables.css";
+@import "fonts.css";
+@import "reset.css";
+@import "components/buttons.css";
+@import "navbar.css";
+@import "footer.css";
+
+
+.container {
+    max-width:1357px ;
+    margin: 0 auto;
+    padding: 0 12px;
+}

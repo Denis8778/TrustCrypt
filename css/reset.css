@@ -1,0 +1,32 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:var(--normal-h2);
+    font-family:Inter, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+}
+img {
+    max-width: 100%;
+}
+
+input, textarea {
+    background: none;
+    border: none;
+    outline: none ;
+resize: none;
+}

@@ -1,0 +1,29 @@
+.btn {
+    padding: 12px;
+    border-radius: 4px;
+    background: var(--normal-green);
+    color: var(--normal-white);
+    font-size: 17px;
+    line-height: 21px;
+    border: 1px solid transparent;
+}
+
+.btn.outline {
+    background: transparent;
+    color: var(--normal-green);
+    border-color: var(--normal-green);
+}
+
+.btn.outline:hover {
+border-color: transparent;
+}
+
+.btn:hover {
+    background:#058F7B;
+    color:#F9F9F9;
+}
+
+.btn:active {
+    background: #027463;
+    color:#DFDFDF;
+}

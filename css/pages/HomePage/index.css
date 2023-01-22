@@ -1,0 +1,9 @@
+@import "hero.css";
+@import "security.css";
+@import "tools.css";
+@import "products.css";
+@import "contacts.css";
+body {
+    background: url("../../../img/HomePage/background/Background.jpg") no-repeat left top / cover;
+    backdrop-filter: blur(15px);
+}

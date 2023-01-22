@@ -1,0 +1,138 @@
+.navbar-wrapper {
+    background: rgba(17, 1, 30, 0.1);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar-logo {
+
+}
+
+.navbar-logo__img {
+
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    column-gap: 64px;
+}
+
+.navbar-right-menu {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+}
+
+.navbar-right-menu__item {
+    position: relative;
+    font-size: 17px;
+    line-height: 21px;
+    color: var(--normal-white);
+    padding: 32px 0;
+}
+
+.navbar-right-menu__item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: var(--normal-green);
+    transition: width .3s;
+}
+
+
+.navbar-right-menu__item.active,
+.navbar-right-menu__item:hover {
+    color: var(--normal-green);
+}
+
+.navbar-right-menu__item.active::before,
+.navbar-right-menu__item:hover::before {
+    width: 100%;
+}
+
+.navbar-right-language {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    padding: 0 4px;
+    cursor: default;
+}
+
+.navbar-right-language__language-item {
+
+}
+
+.navbar-right-language__arrow-icon {
+    transition: transform .3s .3s;
+}
+
+.navbar-right-language:hover .navbar-right-language__arrow-icon {
+    transform: rotate(180deg);
+    transition-delay: 0s;
+}
+
+.navbar-right-language-popup {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    background: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility .3s;
+    transition-delay: .3s;
+}
+
+.navbar-right-language:hover .navbar-right-language-popup {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+.navbar-right-language-popup-button {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    column-gap: 4px;
+    cursor: pointer;
+}
+
+.navbar-right-language-popup-button.active,
+.navbar-right-language-popup-button:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.navbar-right-language-popup-button__icon {
+
+}
+
+.navbar-right-social {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.navbar-right-social-item {
+
+}
+
+.navbar-right-social-item__icon {
+
+}
